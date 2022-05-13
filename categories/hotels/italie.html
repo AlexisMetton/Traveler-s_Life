@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Traveler's life | Italie</title>
+        <link rel="icon" href="../../img/decorations/icone_valise.png">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../CSS/form.css"/>
+        <script src="../../JavaScript/JavaScript.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <input type="checkbox">
+            <img src="../../img/decorations/burger.svg" alt="menu">
+
+            <a href="../../index.html"><h1 class="logo">Traveler's life<img src="../../img/decorations/valise.png" alt="valise"></h1></a>
+
+            <form id="recherche">
+                <input class="barre" type="text" name="text">
+                <input class="envoi" type="submit" name="submit" class="submit" value="">
+            </form>
+
+            <nav>
+                <div class="menu_deroulant">
+                    <input type="checkbox">
+                    <p>Catégories</p>
+                    <div>
+                        <a href="../hotels.html" >Hôtels</a>
+                        <a href="../croisieres.html">Croisières</a>
+                        <a href="../safaris.html">Safaris</a>
+                    </div>
+                </div>
+                <a href="#contacts">Contact</a>
+            </nav>
+        </header>
+
+        <section id="accueil">
+            <div id="imageHotel" style="background-image: url(../../img/italie1.jpg)">
+            </div>
+            <div id="imageCroisiere" style="background-image: url(../../img/italie2.jpg)">
+            </div>
+            <div id="imageSafari" style="background-image: url(../../img/italie3.jpg)">
+            </div>
+            <h1 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Italie<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h1>
+            <div id="interfaceAccueil">
+                <div class="fleche">
+                    <div class="flecheGauche">
+                        <button onclick="decaler(-1, 2)" id="gauche"></button>
+                    </div>
+                    <div class="flecheDroite">
+                        <button onclick="decaler(1, 2)" id="droite"></button>
+                    </div>
+                </div>
+                <div class="ronds">
+                    <div onclick="sauter(1, 2)" class="rondBlanc" id="rondBlanc1"></div>
+                    <div onclick="sauter(2, 2)" class="rondBlanc" id="rondBlanc2"></div>
+                    <div onclick="sauter(3, 2)" class="rondBlanc" id="rondBlanc3"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="citation">
+            <blockquote>
+                <p>« L'impulsion du voyage est l'un des plus encourageants symptômes de la vie. »</p>
+                <cite><img src="../../img/decorations/ligne_citation.svg" alt="Ligne décorative">Agnès Repplier<img src="../../img/decorations/ligne_citation.svg" alt="Ligne décorative"></cite>
+            </blockquote>
+        </section>
+
+        <section id="caracteristique">
+            <div class="blocCaracteristique">
+                <div>
+                    <img class="imagesDuVoyage" id="imagesDuVoyage1" src="../../img/caracteristiqueitalie1.jpg">
+                    <img class="imagesDuVoyage" id="imagesDuVoyage2" src="../../img/caracteristiqueitalie2.jpg">
+                    <img class="imagesDuVoyage" id="imagesDuVoyage3" src="../../img/caracteristiqueitalie3.jpg">
+                    <img class="imagesDuVoyage" id="imagesDuVoyage4" src="../../img/caracteristiqueitalie4.jpg">
+                </div>
+                <div class="menuCaracteristique">
+                    <div onclick="transitionPresentation()" class="menuPresentation" id="menuPresentation">
+                        <p>Présentation</p>
+                    </div>
+                    <div onclick="transitionItineraire()" class="menuItineraire" id="menuItineraire">
+                        <p>Sorties comprises</p>
+                    </div>
+                    <div onclick="transitionHebergement()" class="menuHebergement" id="menuHebergement">
+                        <p>À la carte</p>
+                    </div>
+                    <div onclick="transitionBudget()" class="menuBudget" id="menuBudget">
+                        <p>Budget</p>
+                    </div>
+                </div>
+                <div class="menuText">
+                    <p class="menuTextPresentation" id="menuTextPresentation">C’est en bateau - il fallait bien cela - que vous gagnez l’île de Giudecca. Un splendide yacht de bois verni attend sur le quai de la place Saint-Marc. Cinq minutes de traversée, et c’est un autre monde. Un joli jardin d’abord, puis une grande maison remplie d’antiquités, dans un calme absolu, loin de l'effervescence touristique de la ville pourtant toute proche. Une superbe piscine - un vrai luxe à Venise - autour de laquelle on s'attable aux beaux jours, et de douillets salons-cheminées pour les soirées où la brume enveloppe la lagune. Les chambres et suites sont parfaites. Ce sont aussi les restaurants qui font la gloire du palace : le buffet d’antipasti du déjeuner est proverbial. Le restaurant étoilé propose des plats hauts en couleurs, mais notre préférence va peut-être à l’autre table, posée sur le quai face à Saint-Marc, où jouir de la plus belle vue de Venise.</p>
+                    <p class="menuTextItineraire" id="menuTextItineraire">La Fenice<br><br>
+                        Cet opéra est un paradoxe vénitien : alors que l’eau représente pour la ville une menace permanente, il doit être reconstruit deux fois après avoir été détruit par des incendies. Son nom de Phénix ne fait pas seulement référence au feu sacré qui saisit parfois les chanteurs, ni au brûlant enthousiasme des fous de bel canto, mais bien réellement à une capacité concrète de renaître de ses cendres. Sa décoration rococo tourbillonnante en fait l’une des plus brillantes salles du monde. On y a applaudi Verdi à tout rompre, mais aussi, et on le sait peut-être moins, Benjamin Britten, Luciano Berio ou Luigi Nono, et même Woody Allen. Car l’opéra de Venise ne s’endort pas plus sur ses lauriers que sur ses cendres, il innove. Une soirée à La Fenice est au calendrier de la vie de tout être civilisé.
+                        <br><br><br>
+                        
+                        Le Grand Canal<br><br><br>
+                        C’est le S qui fait de Venise une espèce de symbole yin-yang. Et la voie qui commande les autres. Toutes les architectures de la ville s’y trouvent à touche-touche. La cité des Doges y donne le spectacle grandiose de ses réussites. Des fondachi (maisons de négoce et entrepôts) médiévaux aux grandes réalisations baroques, en passant par les édifices gothiques et Renaissance, l’histoire, montée sur pilotis, est inscrite dans la pierre et la brique. A regarder des gens venus de tous les horizons passer le célèbre pont du Rialto, on se dit que Venise continue à accomplir sa vocation : attirer à soi la richesse du monde.
+                    </p>
+                    <p class="menuTextHebergement" id="menuTextHebergement">VENISE DANS LES PAS D’UN PHOTOGRAPHE<br><br>
+                        Veronica, photographe professionnelle, connaît Venise par cœur et entraîne dans son sillage artistique les voyageurs de passage. Au programme, quelques sites emblématiques de la cité et d'autres plus intimes et secrets, pour immortaliser en images leur séjour.
+                        <br><br>
+                        <strong>En option</strong>
+                        <br><br><br>
+
+                        L’ÎLE DE SAN LAZZARO DEGLIE ARMENI, EN PRIVÉ<br><br>
+                        Très proche du Lido, cette petite île (ancienne léproserie) fut donnée au XVIIIe siècle aux Arméniens, chassés par les Turcs, qui y établirent un couvent, important centre de diffusion de la culture arménienne. Le couvent renferme un musée, une pinacothèque, une imprimerie unique au monde, ainsi qu’une riche bibliothèque comptant plus de cent cinquante mille volumes, dont une précieuse collection de manuscrits enluminés. Il offre également au visiteur un beau lieu de promenade avec son immense jardin. Un guide-moine vous accueille dès la descente du vaporetto pour nous faire visiter leur église, leur réfectoire et la salle des Archives où sont conservés quatre mille manuscrits.
+                        <br><br>
+                        <strong>En option</strong>
+                        <br><br><br>
+
+                        LA BASILIQUE SAINT-MARC EN DEHORS DES HEURES D’OUVERTURE<br><br>
+                        Après la fermeture des portes au public, la Basilique Saint-Marc connaît une deuxième vie et révèle sa splendeur à ceux qui choisissent une visite loin des rythmes et de l’affluence de la journée : les mosaïques, le pavement (XIIe siècle) aux motifs animaliers et géométriques, le retable d'or et de pierres précieuses contribuent à fasciner les fidèles et les visiteurs. Un bijou d'une délicatesse et d'une richesse inouïes.
+                        <br><br>
+                        <strong>En option</strong>
+                    </p>
+                    <p class="menuTextBudget" id="menuTextBudget">Le prix comprend :<br><br>
+                        Le vol aller-retour pour Venise, les taxes aériennes, les transferts privés, les deux nuits en chambre double avec petits-déjeuners, un billet pour une représentation à la Fenice, notre service de navigation GPS accessible depuis notre application.
+                    </p>
+                </div>
+                <div class="menuCaracteristique2">
+                    <div onclick="transitionPresentation2()" class="menuPresentation2" id="menuPresentation2">
+                        <div class="menuPresentationFleche"><p>Présentation</p><img id="flecheBasCaracteristique" src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <p class="menuTextPresentation2" id="menuTextPresentation2">C’est en bateau - il fallait bien cela - que vous gagnez l’île de Giudecca. Un splendide yacht de bois verni attend sur le quai de la place Saint-Marc. Cinq minutes de traversée, et c’est un autre monde. Un joli jardin d’abord, puis une grande maison remplie d’antiquités, dans un calme absolu, loin de l'effervescence touristique de la ville pourtant toute proche. Une superbe piscine - un vrai luxe à Venise - autour de laquelle on s'attable aux beaux jours, et de douillets salons-cheminées pour les soirées où la brume enveloppe la lagune. Les chambres et suites sont parfaites. Ce sont aussi les restaurants qui font la gloire du palace : le buffet d’antipasti du déjeuner est proverbial. Le restaurant étoilé propose des plats hauts en couleurs, mais notre préférence va peut-être à l’autre table, posée sur le quai face à Saint-Marc, où jouir de la plus belle vue de Venise.</p>
+                    <div onclick="transitionItineraire2()" class="menuItineraire2" id="menuItineraire2">
+                        <div class="menuPresentationFleche"><p>Sorties comprises</p><img id="flecheBasCaracteristique2" src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <p class="menuTextItineraire2" id="menuTextItineraire2">La Fenice<br><br>
+                        Cet opéra est un paradoxe vénitien : alors que l’eau représente pour la ville une menace permanente, il doit être reconstruit deux fois après avoir été détruit par des incendies. Son nom de Phénix ne fait pas seulement référence au feu sacré qui saisit parfois les chanteurs, ni au brûlant enthousiasme des fous de bel canto, mais bien réellement à une capacité concrète de renaître de ses cendres. Sa décoration rococo tourbillonnante en fait l’une des plus brillantes salles du monde. On y a applaudi Verdi à tout rompre, mais aussi, et on le sait peut-être moins, Benjamin Britten, Luciano Berio ou Luigi Nono, et même Woody Allen. Car l’opéra de Venise ne s’endort pas plus sur ses lauriers que sur ses cendres, il innove. Une soirée à La Fenice est au calendrier de la vie de tout être civilisé.
+                        <br><br><br>
+                        
+                        Le Grand Canal<br><br>
+                        C’est le S qui fait de Venise une espèce de symbole yin-yang. Et la voie qui commande les autres. Toutes les architectures de la ville s’y trouvent à touche-touche. La cité des Doges y donne le spectacle grandiose de ses réussites. Des fondachi (maisons de négoce et entrepôts) médiévaux aux grandes réalisations baroques, en passant par les édifices gothiques et Renaissance, l’histoire, montée sur pilotis, est inscrite dans la pierre et la brique. A regarder des gens venus de tous les horizons passer le célèbre pont du Rialto, on se dit que Venise continue à accomplir sa vocation : attirer à soi la richesse du monde.
+                    </p>   
+                    <div onclick="transitionHebergement2()" class="menuHebergement2" id="menuHebergement2">
+                        <div class="menuPresentationFleche"><p>À la carte</p><img src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <p class="menuTextHebergement2" id="menuTextHebergement2">VENISE DANS LES PAS D’UN PHOTOGRAPHE<br><br>
+                        Veronica, photographe professionnelle, connaît Venise par cœur et entraîne dans son sillage artistique les voyageurs de passage. Au programme, quelques sites emblématiques de la cité et d'autres plus intimes et secrets, pour immortaliser en images leur séjour.
+                        <br><br>
+                        <strong>En option</strong>
+                        <br><br><br>
+
+                        L’ÎLE DE SAN LAZZARO DEGLIE ARMENI, EN PRIVÉ<br><br>
+                        Très proche du Lido, cette petite île (ancienne léproserie) fut donnée au XVIIIe siècle aux Arméniens, chassés par les Turcs, qui y établirent un couvent, important centre de diffusion de la culture arménienne. Le couvent renferme un musée, une pinacothèque, une imprimerie unique au monde, ainsi qu’une riche bibliothèque comptant plus de cent cinquante mille volumes, dont une précieuse collection de manuscrits enluminés. Il offre également au visiteur un beau lieu de promenade avec son immense jardin. Un guide-moine vous accueille dès la descente du vaporetto pour nous faire visiter leur église, leur réfectoire et la salle des Archives où sont conservés quatre mille manuscrits.
+                        <br><br>
+                        <strong>En option</strong>
+
+                        <br><br><br>
+
+                        LA BASILIQUE SAINT-MARC EN DEHORS DES HEURES D’OUVERTURE<br><br>
+                        Après la fermeture des portes au public, la Basilique Saint-Marc connaît une deuxième vie et révèle sa splendeur à ceux qui choisissent une visite loin des rythmes et de l’affluence de la journée : les mosaïques, le pavement (XIIe siècle) aux motifs animaliers et géométriques, le retable d'or et de pierres précieuses contribuent à fasciner les fidèles et les visiteurs. Un bijou d'une délicatesse et d'une richesse inouïes.
+                        <br><br>
+                        <strong>En option</strong>
+                    </p>
+                    <div onclick="transitionBudget2()" class="menuBudget2" id="menuBudget2">
+                        <div class="menuPresentationFleche"><p>Budget</p><img src="../../img/flecheBasCaracteristique.png" height="40px" width="40px"></div>
+                    </div>
+                    <p class="menuTextBudget2" id="menuTextBudget2">Le prix comprend<br><br>
+                        Le vol aller-retour pour Venise, les taxes aériennes, les transferts privés, les deux nuits en chambre double avec petits-déjeuners, un billet pour une représentation à la Fenice, notre service de navigation GPS accessible depuis notre application.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulaire">
+            <h2>Je suis intéressé par ce voyage !</h2>
+            <article class="ligne">
+                <form method="post" action="traitement.php" class="colonne">
+                    <h5>Demandez des informations ou un devis</h5>
+                    <div class="ligne">
+                        <p class="colonne">
+                            <label for="nom">Nom :</label>
+                            <input type="text" name="nom" required>
+                        </p>
+                        <p class="colonne">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" name="prenom" required>
+                        </p>
+                    </div>
+                    <p class="colonne">
+                        <label for="mail">Adresse mail :</label>
+                        <input type="email" name="mail" required>
+                    </p>
+                    <p class="colonne">
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" name="telephone">
+                    </p>
+                    <p class="colonne">
+                        <label for="demande">Votre demande :</label>
+                        <textarea name="demande" rows="4" required></textarea>
+                    </p>
+                    <input type="submit" value="Envoyer">
+                </form>
+                <div class="img"></div>
+                </article>
+        </section>
+
+        <section id="idees">
+            <h2>Besoin d'autres idées ?</h2>
+            <div class="redirection">
+                <a href="portugal.html" class="redirection1" style="background-image: url(../../img/offrePortugal.jpg)">
+                    <div class="contenerTitre">
+                        <h4 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Portugal<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h4>
+                    </div>
+                </a>
+                <a href="corse.html" class="redirection2" style="background-image: url(../../img/offreCorse.jpg)">
+                    <div class="contenerTitre">
+                        <h4 class="titre"><span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span>Corse<span><img src="../../img/ligneTitre.PNG" alt="Ligne blanche"></span></h4>
+                    </div>
+                </a>    
+            </div>
+        </section>
+
+        <footer>
+            <div class="ligne">
+                <div>
+                    <a href="../../index.html"><h1 class="logo">Traveler's life<img src="../../img/decorations/valise.png" alt="valise"></h1></a>
+                    <a href="#">Mentions légales – CGV</a>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="reseaux">
+                    <h3>Rejoignez-nous</h3>
+                    <div class="ligne">
+                        <button><img src="../../img/decorations/facebook.png" alt="Facebook"></button>
+                        <button><img src="../../img/decorations/instagram.png" alt="Instagram"></button>
+                        <button><img src="../../img/decorations/twitter.png" alt="Twitter"></button>
+                    </div>
+                </div>
+
+                <div class="separateur-vertical"></div>
+
+                <div id="contacts">
+                    <h3>Contact</h3>
+                    <div>
+                        <p>Adresse : 20 rue de la République,<br>58000 Nevers</p>
+                        <p>Téléphone : 03.67.48.59.20</p>
+                        <p>E-Mail : contact@travelerslife.com</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p>Tous droits réservés @Traveler's life</p>
+        </footer>
+    </body>
+
+</html>
